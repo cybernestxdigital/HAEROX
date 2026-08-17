@@ -170,3 +170,52 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+/* ---- Portfolio Lightbox ---- */
+(function () {
+  var cards = document.querySelectorAll('.portfolio-item[data-gallery]');
+  if (!cards.length) return;
+  var lb = document.createElement('div');
+  lb.className = 'lightbox';
+  lb.innerHTML = '<img class="lightbox-img" alt="Project image">' +
+    '<button class="lightbox-close" aria-label="Close">&times;</button>' +
+    '<button class="lightbox-prev" aria-label="Previous">&#8592;</button>' +
+    '<button class="lightbox-next" aria-label="Next">&#8594;</button>' +
+    '<div class="lightbox-counter"></div>';
+  document.body.appendChild(lb);
+  var imgEl = lb.querySelector('.lightbox-img');
+  var counter = lb.querySelector('.lightbox-counter');
+  var imgs = [], idx = 0;
+  function show(i) {
+    idx = (i + imgs.length) % imgs.length;
+    imgEl.src = imgs[idx];
+    counter.textContent = (idx + 1) + ' / ' + imgs.length;
+  }
+  function open(list) {
+    imgs = list;
+    lb.classList.toggle('single', imgs.length < 2);
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    show(0);
+  }
+  function close() {
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+    imgEl.src = '';
+  }
+  cards.forEach(function (card) {
+    card.addEventListener('click', function (e) {
+      e.preventDefault();
+      open(card.getAttribute('data-gallery').split(','));
+    });
+  });
+  lb.querySelector('.lightbox-close').addEventListener('click', close);
+  lb.querySelector('.lightbox-prev').addEventListener('click', function () { show(idx - 1); });
+  lb.querySelector('.lightbox-next').addEventListener('click', function () { show(idx + 1); });
+  lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+  document.addEventListener('keydown', function (e) {
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowLeft') show(idx - 1);
+    if (e.key === 'ArrowRight') show(idx + 1);
+  });
+})();

@@ -1538,3 +1538,21 @@ select.form-control {
     grid-template-columns: 1fr;
   }
 }
+
+/* ---- Lightbox ---- */
+.lightbox { position: fixed; inset: 0; z-index: 10000; background: rgba(5,5,5,0.96); display: none; align-items: center; justify-content: center; }
+.lightbox.open { display: flex; }
+.lightbox-img { max-width: 88vw; max-height: 82vh; object-fit: contain; box-shadow: 0 20px 60px rgba(0,0,0,0.6); }
+.lightbox-close, .lightbox-prev, .lightbox-next { position: absolute; background: none; border: 1px solid rgba(255,255,255,0.25); color: #fff; cursor: pointer; font-family: inherit; transition: background 0.25s, border-color 0.25s; display: flex; align-items: center; justify-content: center; }
+.lightbox-close { top: 1.5rem; right: 1.5rem; width: 48px; height: 48px; border-radius: 50%; font-size: 1.4rem; }
+.lightbox-prev, .lightbox-next { top: 50%; transform: translateY(-50%); width: 52px; height: 52px; border-radius: 50%; font-size: 1.5rem; }
+.lightbox-prev { left: 1.5rem; }
+.lightbox-next { right: 1.5rem; }
+.lightbox-close:hover, .lightbox-prev:hover, .lightbox-next:hover { background: rgba(255,255,255,0.12); border-color: #fff; }
+.lightbox-counter { position: absolute; bottom: 1.5rem; left: 50%; transform: translateX(-50%); color: rgba(255,255,255,0.7); font-size: 0.85rem; letter-spacing: 0.15em; }
+.lightbox.single .lightbox-prev, .lightbox.single .lightbox-next, .lightbox.single .lightbox-counter { display: none; }
+@media (max-width: 768px) {
+  .lightbox-img { max-width: 94vw; max-height: 74vh; }
+  .lightbox-prev { left: 0.5rem; } .lightbox-next { right: 0.5rem; }
+  .lightbox-prev, .lightbox-next { width: 42px; height: 42px; }
+}
