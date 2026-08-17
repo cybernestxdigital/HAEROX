@@ -1,25 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
   
-  // Custom Cursor
-  const cursor = document.createElement('div');
-  cursor.classList.add('custom-cursor');
-  document.body.appendChild(cursor);
-
-  document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.clientX + 'px';
-    cursor.style.top = e.clientY + 'px';
-  });
-
-  const addCursorHover = (elements, className) => {
-    elements.forEach(el => {
-      el.addEventListener('mouseenter', () => cursor.classList.add(className));
-      el.addEventListener('mouseleave', () => cursor.classList.remove(className));
-    });
-  };
-
-  addCursorHover(document.querySelectorAll('a, button, .service-item'), 'hover');
-  addCursorHover(document.querySelectorAll('.portfolio-item'), 'view-hover');
-
   // Header Scroll
   const header = document.querySelector('header');
   window.addEventListener('scroll', () => {
