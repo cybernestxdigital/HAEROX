@@ -656,6 +656,17 @@ section {
   margin-top: 3rem;
 }
 
+/* 4th homepage card: only shown below 1024px where the grid is 2 columns */
+.portfolio-item--extra {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .portfolio-item--extra {
+    display: block;
+  }
+}
+
 @media (max-width: 1024px) {
   .portfolio-grid {
     grid-template-columns: repeat(2, 1fr);
