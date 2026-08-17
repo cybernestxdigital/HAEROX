@@ -685,6 +685,12 @@ section {
   }
 }
 
+.portfolio-img--logo {
+  object-fit: contain !important;
+  background: #050505;
+  padding: 1.5rem;
+}
+
 .portfolio-img {
   width: 100%;
   aspect-ratio: 4/5;
