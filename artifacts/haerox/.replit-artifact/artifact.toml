@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "HAEROX Agency Website"
+description = "A premium black-and-white creative agency website for HAEROX with Home, Services, Portfolio, About, and Contact pages. Built as a static HTML/CSS/vanilla JS site, Hostinger-ready, with editorial layouts, large typography, and smooth animations."
+version = "1.0.0"
+id = "artifacts/haerox"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23112
+
+[services.development]
+run = "pnpm --filter @workspace/haerox run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/haerox", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/haerox/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23112"
+BASE_PATH = "/"

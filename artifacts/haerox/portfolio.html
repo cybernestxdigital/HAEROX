@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — HAEROX</title>
+  <meta name="description" content="Explore our selected work across branding, web design, marketing, and creative campaigns.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo">
+      <img src="images/logo/haerox-logo.jpg" alt="HAEROX Logo">
+    </a>
+    
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn nav-cta">Let's Talk</a>
+    </nav>
+    
+    <button class="mobile-menu-btn" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="container">
+      <h1 class="huge-text text-reveal active">
+        <span>SELECTED</span><br>
+        <span>WORK.</span>
+      </h1>
+      <p class="body-large fade-up delay-200" style="max-width: 800px; margin-top: 2rem;">
+        A curated selection of our finest projects. We pride ourselves on pushing boundaries and challenging the status quo in digital design and brand strategy.
+      </p>
+    </div>
+  </section>
+
+  <!-- Portfolio Gallery -->
+  <section style="padding-top: 0;">
+    <div class="container">
+      
+      <!-- Filters -->
+      <div class="portfolio-filters fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="Branding">Branding</button>
+        <button class="filter-btn" data-filter="Web">Web</button>
+        <button class="filter-btn" data-filter="Marketing">Marketing</button>
+        <button class="filter-btn" data-filter="E-Commerce">E-Commerce</button>
+        <button class="filter-btn" data-filter="Creative">Creative</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+        
+        <a href="#project" class="portfolio-item img-reveal delay-100" data-category="Branding">
+          <img src="images/portfolio/proj1.jpg" alt="Aura Skincare" class="portfolio-img">
+          <div class="portfolio-overlay">
+            <div class="portfolio-meta">
+              <div class="portfolio-cat">Branding</div>
+              <h3 class="portfolio-title">Aura Skincare</h3>
+              <p>Luxury brand identity and packaging design.</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="#project" class="portfolio-item img-reveal delay-200" data-category="Web">
+          <img src="images/portfolio/proj2.jpg" alt="Fintech App" class="portfolio-img">
+          <div class="portfolio-overlay">
+            <div class="portfolio-meta">
+              <div class="portfolio-cat">Web</div>
+              <h3 class="portfolio-title">Fintech App</h3>
+              <p>Modern mobile interface for digital banking.</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="#project" class="portfolio-item img-reveal delay-100" data-category="Creative">
+          <img src="images/portfolio/proj3.jpg" alt="Urban Poster Series" class="portfolio-img">
+          <div class="portfolio-overlay">
+            <div class="portfolio-meta">
+              <div class="portfolio-cat">Creative</div>
+              <h3 class="portfolio-title">Urban Poster Series</h3>
+              <p>Brutalist architecture poster campaign.</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="#project" class="portfolio-item img-reveal delay-200" data-category="E-Commerce">
+          <img src="images/portfolio/proj4.jpg" alt="Luxury Beauty" class="portfolio-img">
+          <div class="portfolio-overlay">
+            <div class="portfolio-meta">
+              <div class="portfolio-cat">E-Commerce</div>
+              <h3 class="portfolio-title">Lumière Beauty</h3>
+              <p>High-end e-commerce platform.</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="#project" class="portfolio-item img-reveal delay-100" data-category="Creative">
+          <img src="images/portfolio/proj5.jpg" alt="Abstract 3D Art" class="portfolio-img">
+          <div class="portfolio-overlay">
+            <div class="portfolio-meta">
+              <div class="portfolio-cat">Creative</div>
+              <h3 class="portfolio-title">Nexus 3D</h3>
+              <p>Abstract 3D motion graphics for tech launch.</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="#project" class="portfolio-item img-reveal delay-200" data-category="Branding">
+          <img src="images/portfolio/proj6.jpg" alt="Editorial Magazine" class="portfolio-img">
+          <div class="portfolio-overlay">
+            <div class="portfolio-meta">
+              <div class="portfolio-cat">Branding</div>
+              <h3 class="portfolio-title">Vanguard Editorial</h3>
+              <p>Print magazine layout and typography.</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="#project" class="portfolio-item img-reveal delay-100" data-category="Marketing">
+          <img src="images/portfolio/proj7.jpg" alt="Data Dashboard" class="portfolio-img">
+          <div class="portfolio-overlay">
+            <div class="portfolio-meta">
+              <div class="portfolio-cat">Marketing</div>
+              <h3 class="portfolio-title">Data Dashboard</h3>
+              <p>Digital marketing dashboard interface.</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="#project" class="portfolio-item img-reveal delay-200" data-category="Branding">
+          <img src="images/portfolio/proj8.jpg" alt="Corporate Stationery" class="portfolio-img">
+          <div class="portfolio-overlay">
+            <div class="portfolio-meta">
+              <div class="portfolio-cat">Branding</div>
+              <h3 class="portfolio-title">Stratos Corp</h3>
+              <p>Corporate identity and modern stationery.</p>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="huge-text fade-up">LIKE WHAT<br>YOU SEE?</h2>
+      <div class="fade-up delay-200" style="margin-top: 3rem;">
+        <a href="contact.html" class="btn">Let's Talk</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <a href="index.html">
+            <img src="images/logo/haerox-logo.jpg" alt="HAEROX Logo">
+          </a>
+          <p style="color: var(--text-secondary); max-width: 300px;">
+            A global creative & digital agency. We build brands that move people.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Socials</h4>
+          <ul>
+            <li><a href="#instagram">Instagram</a></li>
+            <li><a href="#linkedin">LinkedIn</a></li>
+            <li><a href="#facebook">Facebook</a></li>
+            <li><a href="#behance">Behance</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 HAEROX. All Rights Reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

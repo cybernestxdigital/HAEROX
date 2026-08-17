@@ -1,6 +1,6 @@
-# [Project name]
+# HAEROX Agency Website
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+Premium black-and-white creative agency website for HAEROX (haerox.com), built as a pure static HTML/CSS/vanilla-JS multi-page site in `artifacts/haerox/` — no React, no backend, Hostinger-ready (upload the folder contents to `public_html`). The react-vite artifact scaffold was repurposed: Vite only serves/builds the static pages (see `artifacts/haerox/vite.config.ts`, MPA inputs from root-level `*.html`). Do not reintroduce React there. Pages: index, services, portfolio, about, contact (+ privacy/terms). Contact form is front-end only (validation + simulated success); contact info and social links are placeholders.
 
 ## Run & Operate
 
