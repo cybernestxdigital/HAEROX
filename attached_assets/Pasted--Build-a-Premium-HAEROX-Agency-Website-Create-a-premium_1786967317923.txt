@@ -1,0 +1,872 @@
+# Build a Premium HAEROX Agency Website
+
+Create a **premium, modern, visually impressive business/creative agency website for HAEROX**.
+
+The website will ultimately be hosted on:
+
+**https://haerox.com**
+
+The website must be designed to look like a **high-end global creative/digital agency**, with strong visual presentation, premium typography, large imagery, smooth animations, excellent spacing, and a sophisticated black-and-white brand identity.
+
+## 1. IMPORTANT TECHNOLOGY REQUIREMENT
+
+Build the website using:
+
+* HTML5
+* CSS3
+* Vanilla JavaScript
+
+Do NOT use:
+
+* React
+* Next.js
+* Node.js backend
+* PHP
+* Database
+* Authentication
+* Admin dashboard
+* CMS
+* Login system
+
+The final project must be completely compatible with **standard Hostinger web hosting**.
+
+It should work simply by uploading the website files to:
+
+`public_html`
+
+The website must NOT require a running server.
+
+---
+
+# 2. BRAND
+
+Brand name:
+
+**HAEROX**
+
+Domain:
+
+**haerox.com**
+
+Use the provided HAEROX logo as the primary website logo.
+
+The logo consists of a distinctive geometric white symbol and the HAEROX wordmark.
+
+## Logo requirements
+
+* Use the provided logo asset.
+* Do not redesign the logo.
+* Do not distort or stretch it.
+* Maintain its original proportions.
+* Use the white version prominently on dark backgrounds.
+* Create a suitable favicon using the logo mark where possible.
+* Keep the logo visually sharp and premium.
+
+Place the logo in the main navigation/header.
+
+---
+
+# 3. BRAND STYLE
+
+Create a sophisticated **black-and-white visual identity**.
+
+Primary colors:
+
+* Black
+* White
+* Off-white / soft neutral tones where necessary
+
+Avoid bright generic colors.
+
+The overall visual language should feel:
+
+* Premium
+* Minimal
+* Bold
+* Creative
+* Modern
+* Editorial
+* High-end
+* Professional
+* Technology-driven
+* Agency-focused
+
+Do NOT make it look like a generic corporate template.
+
+---
+
+# 4. DESIGN INSPIRATION
+
+The design should have the visual quality of a premium international creative agency website.
+
+Use:
+
+* Huge typography
+* Strong headlines
+* Large visual sections
+* Full-width imagery
+* Editorial layouts
+* Asymmetric layouts where appropriate
+* Large whitespace
+* Smooth transitions
+* Subtle motion
+* Image reveal animations
+* Elegant hover interactions
+* Modern cards
+* High-quality visual hierarchy
+
+Do NOT copy any existing website's exact design, layout, text, code, or assets.
+
+Create an original HAEROX design inspired by premium agency websites.
+
+---
+
+# 5. WEBSITE PAGES
+
+Create these separate pages:
+
+1. Home
+2. Services
+3. Portfolio
+4. About
+5. Contact
+
+Each must be a separate HTML page.
+
+Example:
+
+```text
+index.html
+services.html
+portfolio.html
+about.html
+contact.html
+```
+
+Do NOT create a single-page-only website.
+
+Navigation between pages must work correctly.
+
+---
+
+# 6. PROJECT STRUCTURE
+
+Use a clean structure such as:
+
+```text
+/
+├── index.html
+├── services.html
+├── portfolio.html
+├── about.html
+├── contact.html
+├── favicon.ico
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+├── images/
+│   ├── logo/
+│   ├── hero/
+│   ├── services/
+│   ├── portfolio/
+│   └── about/
+│
+└── README.md
+```
+
+Keep the code organized and production-ready.
+
+---
+
+# 7. IMAGE REQUIREMENT
+
+Images are VERY important.
+
+The website must NOT look like a text-only website.
+
+Use high-quality, premium images throughout the website.
+
+Use images relevant to:
+
+* Branding
+* Digital marketing
+* Creative design
+* Websites
+* Technology
+* Business
+* E-commerce
+* Creative teams
+* Modern workspaces
+* Digital products
+* Campaigns
+* Brand identity
+* Advertising
+
+Use large visual images in:
+
+* Hero section
+* Services
+* Portfolio
+* About
+* CTA sections
+
+If external image URLs are used during development, structure the project so images can easily be replaced later with local files.
+
+Prefer local `/images/` assets for final production whenever possible.
+
+Do not use low-quality, pixelated, irrelevant, or obviously generic stock images.
+
+---
+
+# 8. HEADER / NAVIGATION
+
+Create a premium sticky navigation.
+
+Desktop:
+
+Left:
+**HAEROX logo**
+
+Right:
+
+* Home
+* Services
+* Portfolio
+* About
+* Contact
+
+Add a premium CTA button:
+
+**Let's Talk →**
+
+Navigation should remain elegant and minimal.
+
+On mobile:
+
+Create a premium animated hamburger menu.
+
+The mobile menu should open smoothly.
+
+---
+
+# 9. HOME PAGE
+
+Create a visually powerful homepage.
+
+## HERO SECTION
+
+Use a large, bold headline.
+
+Suggested concept:
+
+**WE BUILD
+BRANDS THAT
+MOVE PEOPLE.**
+
+Do not necessarily use this exact wording if a stronger HAEROX-specific headline can be created.
+
+Add a short supporting paragraph explaining HAEROX as a modern creative/digital agency.
+
+Add CTA buttons:
+
+**Explore Our Work**
+
+and
+
+**Let's Talk**
+
+Use a large premium visual/image alongside or behind the hero content.
+
+Add subtle animation.
+
+Hero should immediately communicate:
+
+**HAEROX = premium creative + digital solutions.**
+
+---
+
+# 10. HOME — INTRODUCTION
+
+After the hero, create a strong introductory section.
+
+Example concept:
+
+**We turn ideas into brands, experiences and digital products that people remember.**
+
+Include a short paragraph about HAEROX.
+
+Use large typography and generous whitespace.
+
+---
+
+# 11. HOME — SERVICES
+
+Create a premium services section.
+
+Possible services:
+
+### Brand Strategy
+
+Building meaningful and recognizable brand identities.
+
+### Creative Design
+
+Visual identities, campaigns and creative communication.
+
+### Digital Marketing
+
+Performance-driven digital campaigns and growth strategies.
+
+### Web Development
+
+Modern, responsive and conversion-focused websites.
+
+### E-Commerce
+
+Digital commerce experiences designed to convert.
+
+### Content & Creative
+
+Visual content, social media creatives and digital storytelling.
+
+Each service should have:
+
+* Number
+* Title
+* Short description
+* Arrow / CTA
+* Hover animation
+
+Make the section visually interactive.
+
+---
+
+# 12. HOME — FEATURED WORK
+
+Create a large portfolio showcase.
+
+Title:
+
+**SELECTED WORK**
+
+Show 4–6 premium project cards.
+
+Each card should contain:
+
+* Large image
+* Project name
+* Category
+* Short description
+* View Project arrow
+
+Use different image sizes/layouts to create an editorial feel.
+
+Hovering over an image should produce a subtle premium interaction.
+
+---
+
+# 13. HOME — WHY HAEROX
+
+Create a bold section explaining the HAEROX approach.
+
+Possible points:
+
+* Strategy First
+* Creative Thinking
+* Digital Excellence
+* Business Focus
+* Attention to Detail
+* Long-Term Growth
+
+Use large typography and subtle scroll animation.
+
+---
+
+# 14. HOME — STATS
+
+Create animated counters.
+
+Example:
+
+**50+ Projects**
+
+**20+ Brands**
+
+**5+ Industries**
+
+**100% Commitment**
+
+Use JavaScript to animate the numbers when the section enters the viewport.
+
+Do not claim these numbers as factual company statistics unless they are clearly marked as placeholder content that can be changed later.
+
+---
+
+# 15. HOME — FINAL CTA
+
+Create a dramatic full-width CTA section.
+
+Headline:
+
+**LET'S BUILD
+SOMETHING
+REMARKABLE.**
+
+Add:
+
+**Start a Project →**
+
+Use a premium visual background/image treatment.
+
+---
+
+# 16. SERVICES PAGE
+
+Create a detailed Services page.
+
+Hero:
+
+**WHAT WE DO**
+
+Short introduction.
+
+Then create large service sections for:
+
+1. Brand Strategy
+2. Branding & Identity
+3. Creative Design
+4. Digital Marketing
+5. Website Development
+6. E-Commerce Solutions
+7. Content & Social Media
+8. Creative Campaigns
+
+Each service should include:
+
+* Large number
+* Large heading
+* Description
+* Key deliverables
+* Relevant image
+* CTA
+
+Use alternating layouts to avoid a repetitive design.
+
+---
+
+# 17. PORTFOLIO PAGE
+
+Create a premium portfolio gallery.
+
+Hero:
+
+**SELECTED WORK**
+
+Add category filters:
+
+* All
+* Branding
+* Web
+* Marketing
+* E-Commerce
+* Creative
+
+The filters should work using JavaScript without a backend.
+
+Create 8–12 portfolio items.
+
+Each project should include:
+
+* Project title
+* Category
+* Image
+* Short description
+
+Use a premium masonry/editorial-style grid where appropriate.
+
+Hover interaction:
+
+* Image zoom slightly
+* Overlay appears
+* Project title appears
+* Arrow animation
+
+Do NOT require a database.
+
+Portfolio content can be stored directly inside HTML.
+
+---
+
+# 18. ABOUT PAGE
+
+Create a sophisticated About page.
+
+Hero headline:
+
+**WE ARE HAEROX.**
+
+Introduce HAEROX as a modern creative and digital agency focused on helping businesses build stronger brands and digital experiences.
+
+Include sections:
+
+### Our Philosophy
+
+### Our Approach
+
+### What Makes Us Different
+
+### Our Capabilities
+
+Use large typography, photography and editorial layouts.
+
+Create a strong visual storytelling experience rather than a basic corporate About page.
+
+---
+
+# 19. CONTACT PAGE
+
+Create a premium contact page.
+
+Hero:
+
+**LET'S TALK.**
+
+Include contact form fields:
+
+* Name
+* Company
+* Email
+* Phone
+* Service
+* Project Details
+
+Button:
+
+**SEND INQUIRY →**
+
+Since there is no backend, create the form using a front-end approach.
+
+Use JavaScript validation.
+
+For submission, prepare the structure so it can later connect to an email/form service.
+
+Do NOT create a database.
+
+Also include:
+
+* Email
+* Phone
+* WhatsApp
+* Location
+* Social links
+
+Use placeholders where actual business information has not been provided.
+
+---
+
+# 20. ANIMATIONS
+
+Animations are very important.
+
+Use lightweight vanilla JavaScript/CSS animations.
+
+Include:
+
+* Fade-in on scroll
+* Slide-up reveal
+* Image reveal
+* Text reveal
+* Smooth scrolling
+* Button hover animation
+* Image hover zoom
+* Portfolio hover effects
+* Navigation animation
+* Counter animation
+* Page transition feel
+
+Animations must be:
+
+* Smooth
+* Elegant
+* Fast
+* Professional
+
+Do NOT overuse flashy animations.
+
+The website must still feel premium and fast.
+
+---
+
+# 21. CUSTOM CURSOR
+
+On desktop, optionally create a subtle custom cursor interaction.
+
+For example:
+
+When hovering over portfolio images:
+
+**VIEW →**
+
+appears near the cursor.
+
+Keep it subtle.
+
+Disable custom cursor effects on mobile.
+
+---
+
+# 22. TYPOGRAPHY
+
+Use premium modern typography.
+
+Prefer fonts such as:
+
+* Inter
+* Manrope
+* Plus Jakarta Sans
+* Space Grotesk
+
+Use one primary font family and optionally one display font.
+
+Typography should have:
+
+* Very large hero headlines
+* Strong section headings
+* Clean body text
+* Tight letter spacing where appropriate
+* Excellent line height
+
+---
+
+# 23. RESPONSIVE DESIGN
+
+The website must be fully responsive.
+
+Test and optimize for:
+
+* Desktop 1440px+
+* Laptop 1280px
+* Tablet 768px
+* Mobile 390px
+* Mobile 360px
+
+Nothing should overflow horizontally.
+
+Images must resize correctly.
+
+Navigation must work correctly on mobile.
+
+Typography must scale responsively.
+
+---
+
+# 24. PERFORMANCE
+
+Optimize the website for fast loading.
+
+Use:
+
+* Lazy loading for below-the-fold images
+* Proper image dimensions
+* Lightweight JavaScript
+* Minimal dependencies
+* CSS animations instead of heavy libraries
+* No unnecessary frameworks
+* No huge video files
+
+Avoid unnecessary third-party libraries.
+
+---
+
+# 25. SEO BASICS
+
+Do basic technical HTML setup only.
+
+Add:
+
+* Proper `<title>`
+* Meta description
+* Viewport
+* Semantic HTML
+* Proper H1/H2/H3 hierarchy
+* Image alt attributes
+* Favicon
+* Open Graph metadata
+
+Do NOT build an aggressive SEO strategy or SEO dashboard.
+
+---
+
+# 26. ACCESSIBILITY
+
+Ensure:
+
+* Good text contrast
+* Keyboard navigation
+* Accessible buttons
+* Proper labels on form inputs
+* Alt text for images
+* Semantic HTML
+
+---
+
+# 27. FOOTER
+
+Create a premium footer on every page.
+
+Include:
+
+HAEROX logo
+
+Navigation:
+
+* Home
+* Services
+* Portfolio
+* About
+* Contact
+
+Social links:
+
+* Instagram
+* LinkedIn
+* Facebook
+* Behance
+
+Use placeholders for URLs if they are not provided.
+
+Add:
+
+**© 2026 HAEROX. All Rights Reserved.**
+
+Also add:
+
+**Privacy Policy**
+**Terms & Conditions**
+
+These can initially be simple placeholder pages/links if required.
+
+---
+
+# 28. IMPORTANT — NO ADMIN PANEL
+
+Do NOT create:
+
+* Admin dashboard
+* CMS
+* Login
+* User registration
+* Database
+* Backend
+* Authentication
+* Server API
+
+Everything should be controlled through the website source files.
+
+---
+
+# 29. HOSTINGER COMPATIBILITY
+
+The final website must be deployable to standard Hostinger hosting.
+
+There should be no requirement for:
+
+* Node.js server
+* npm start
+* Database
+* Python server
+* PHP backend
+
+The final production files must work when uploaded to:
+
+`public_html`
+
+Make sure all links use relative paths.
+
+Example:
+
+```html
+<a href="services.html">Services</a>
+```
+
+Do not use development-only paths.
+
+---
+
+# 30. GITHUB COMPATIBILITY
+
+Keep the project clean and ready to push to GitHub.
+
+Include:
+
+```text
+README.md
+```
+
+The README should explain:
+
+* Project name
+* Technology used
+* Folder structure
+* How to run locally
+* How to deploy to Hostinger
+* Where to replace images
+* Where to edit text
+* Where to update contact information
+
+---
+
+# 31. FINAL QUALITY REQUIREMENT
+
+Do NOT produce a basic template.
+
+The final result should feel like a website made by a **top-tier international creative agency**.
+
+Prioritize:
+
+**Visual impact > generic template design**
+
+**Premium typography > excessive text**
+
+**Large imagery > empty sections**
+
+**Elegant animation > flashy animation**
+
+**Strong spacing > crowded layouts**
+
+**Professional UX > unnecessary features**
+
+The website should immediately look expensive, modern and professionally designed.
+
+---
+
+# 32. FINAL CHECK
+
+Before finishing:
+
+* Check every page.
+* Check every navigation link.
+* Check every button.
+* Check all images.
+* Check mobile responsiveness.
+* Check desktop responsiveness.
+* Check animations.
+* Check form validation.
+* Check that there are no broken assets.
+* Check that there are no console errors.
+* Check that all CSS and JS paths are relative.
+* Check that the website can be uploaded directly to Hostinger `public_html`.
+
+Most importantly:
+
+**DO NOT add an admin panel.**
+
+**DO NOT add a database.**
+
+**DO NOT use React/Next.js.**
+
+Build a **premium HAEROX static website using HTML + CSS + JavaScript**, with dynamic interactions and a polished agency-level user experience.
