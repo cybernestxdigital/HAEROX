@@ -332,8 +332,9 @@ header.scrolled .logo img {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 100%;
+    width: min(60vw, 320px);
     height: 100dvh;
+    box-shadow: -12px 0 40px rgba(0, 0, 0, 0.35);
     background-color: #000000;
     color: #ffffff;
     flex-direction: column;
@@ -857,8 +858,9 @@ footer {
 }
 
 .footer-social a svg {
-  width: 18px;
-  height: 18px;
+  width: 17px;
+  height: 17px;
+  display: block;
 }
 
 .footer-social a:hover {
@@ -901,6 +903,15 @@ footer {
   font-size: 0.9rem;
   position: relative;
   display: inline-block;
+}
+
+.footer-links .footer-social a {
+  display: inline-flex;
+  font-size: 0;
+}
+
+.footer-links .footer-social a::after {
+  display: none;
 }
 
 .footer-links a::after {
