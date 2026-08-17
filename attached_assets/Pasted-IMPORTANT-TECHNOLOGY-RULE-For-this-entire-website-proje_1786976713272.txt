@@ -1,0 +1,186 @@
+IMPORTANT TECHNOLOGY RULE:
+
+For this entire website project, use ONLY:
+
+* HTML5
+* CSS3
+* Vanilla JavaScript
+
+DO NOT use React.
+DO NOT use Next.js.
+DO NOT use Vue.
+DO NOT use Angular.
+DO NOT use Vite.
+DO NOT use Node.js.
+DO NOT use Express.
+DO NOT use TypeScript.
+DO NOT use any frontend framework.
+DO NOT create a backend.
+DO NOT create a database.
+DO NOT create an admin panel.
+DO NOT create authentication or login.
+
+The website must be a completely static HTML/CSS/JavaScript website with JavaScript-powered interactions and animations.
+
+HOSTING REQUIREMENT:
+
+The final website must be directly compatible with Hostinger shared hosting.
+
+The website must work by uploading the project files directly into:
+
+public_html/
+
+The root of the project MUST contain:
+
+index.html
+
+Use separate HTML files for separate pages, for example:
+
+index.html
+services.html
+portfolio.html
+about.html
+contact.html
+
+Use a clean structure:
+
+/
+├── index.html
+├── services.html
+├── portfolio.html
+├── about.html
+├── contact.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── images/
+│   ├── logo/
+│   ├── hero/
+│   ├── services/
+│   ├── portfolio/
+│   └── about/
+└── favicon.ico
+
+IMPORTANT PATH RULE:
+
+Use only relative paths.
+
+Correct:
+
+./css/style.css
+./js/script.js
+./images/logo/logo.png
+./services.html
+
+Do NOT use:
+
+/src/
+/client/
+/app/
+/localhost/
+/replit-specific paths/
+
+Do NOT depend on a development server.
+
+Do NOT require npm start.
+
+Do NOT require a Node.js server.
+
+Do NOT require a build command to make the website work.
+
+The files inside the project must already be production-ready static files.
+
+The website must work directly by opening:
+
+index.html
+
+and after uploading to:
+
+public_html/
+
+it must work directly on the Hostinger domain.
+
+GITHUB REQUIREMENT:
+
+Keep the repository clean and deployment-ready.
+
+The GitHub repository root must contain index.html.
+
+Do not put the actual website inside another nested folder.
+
+Correct:
+
+GitHub Repository
+├── index.html
+├── services.html
+├── css/
+├── js/
+└── images/
+
+Incorrect:
+
+GitHub Repository
+└── project/
+└── index.html
+
+INTERACTION REQUIREMENT:
+
+Although the website is static, use Vanilla JavaScript for:
+
+* Mobile navigation
+* Smooth scrolling
+* Scroll animations
+* Image reveal animations
+* Counters
+* Portfolio filtering
+* Hover interactions
+* Sliders if required
+* Form validation
+* Menu animations
+* Other frontend interactions
+
+Do not use a backend for these features.
+
+DESIGN REQUIREMENT:
+
+The website should NOT look like a basic HTML template.
+
+Create a premium, modern, responsive design with:
+
+* High-quality images
+* Large typography
+* Premium spacing
+* Smooth animations
+* Elegant hover effects
+* Modern layouts
+* Strong visual hierarchy
+* Mobile responsiveness
+* Professional UI/UX
+
+FINAL CHECK BEFORE COMPLETING:
+
+1. index.html exists in the project root.
+2. All pages are separate HTML files.
+3. CSS is inside css/.
+4. JavaScript is inside js/.
+5. Images are inside images/.
+6. All links use relative paths.
+7. No React.
+8. No Node.js.
+9. No Vite.
+10. No backend.
+11. No database.
+12. No admin panel.
+13. No login.
+14. No localhost URLs.
+15. No Replit-only dependencies.
+16. Website works without npm.
+17. Website can be uploaded directly to Hostinger public_html.
+18. Website can be pushed directly to GitHub.
+19. Website can be deployed through Hostinger Git.
+20. Opening the domain must load index.html without a 403 caused by missing/incorrect entry files.
+
+THIS RULE IS PERMANENT FOR THIS PROJECT:
+
+HTML + CSS + VANILLA JAVASCRIPT ONLY.
