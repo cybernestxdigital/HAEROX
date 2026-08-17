@@ -1223,6 +1223,15 @@ select.form-control {
   text-wrap: balance;
 }
 
+.approach-sticky {
+  position: sticky;
+  top: 120px;
+}
+
+@media (max-width: 768px) {
+  .approach-sticky { position: static; }
+}
+
 .approach-list { border-top: 1px solid var(--border); }
 .approach-row {
   display: grid;
