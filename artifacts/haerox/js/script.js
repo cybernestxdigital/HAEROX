@@ -116,6 +116,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Floating Label Input State
+  const formControls = document.querySelectorAll('.form-control');
+  formControls.forEach(input => {
+    // Initial check
+    if (input.value) input.classList.add('has-value');
+    
+    // Check on input
+    input.addEventListener('input', () => {
+      if (input.value) input.classList.add('has-value');
+      else input.classList.remove('has-value');
+    });
+
+    // Check on change (for selects)
+    input.addEventListener('change', () => {
+      if (input.value) input.classList.add('has-value');
+      else input.classList.remove('has-value');
+    });
+  });
+
   // Contact Form Validation
   const contactForm = document.getElementById('contactForm');
   const formMessage = document.getElementById('formMessage');
