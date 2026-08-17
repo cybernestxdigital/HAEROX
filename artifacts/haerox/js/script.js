@@ -153,19 +153,47 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Simulate sending
+      // Send inquiry via FormSubmit (delivers to Info@haerox.com)
       const btn = contactForm.querySelector('button');
       const originalText = btn.innerHTML;
       btn.innerHTML = 'SENDING...';
       btn.disabled = true;
 
-      setTimeout(() => {
-        formMessage.textContent = 'Thank you for your inquiry. Our team will contact you shortly.';
-        formMessage.className = 'form-message success';
-        contactForm.reset();
-        btn.innerHTML = originalText;
-        btn.disabled = false;
-      }, 1500);
+      const data = {
+        name: name,
+        company: document.getElementById('company').value,
+        email: email,
+        phone: document.getElementById('phone').value,
+        service: service,
+        details: document.getElementById('details').value,
+        _subject: 'New Inquiry from haerox.com — ' + name,
+        _template: 'table',
+        _captcha: 'false'
+      };
+
+      fetch('https://formsubmit.co/ajax/Info@haerox.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      })
+        .then(function (res) { return res.json(); })
+        .then(function (res) {
+          if (res.success === 'true' || res.success === true) {
+            formMessage.textContent = 'Thank you for your inquiry. Our team will contact you shortly.';
+            formMessage.className = 'form-message success';
+            contactForm.reset();
+          } else {
+            throw new Error(res.message || 'Failed');
+          }
+        })
+        .catch(function () {
+          formMessage.textContent = 'Something went wrong. Please email us at Info@haerox.com or reach us on WhatsApp.';
+          formMessage.className = 'form-message error';
+        })
+        .finally(function () {
+          btn.innerHTML = originalText;
+          btn.disabled = false;
+        });
     });
   }
 
