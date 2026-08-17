@@ -1,0 +1,163 @@
+Modify the existing HAEROX website so it can be deployed directly to standard Hostinger shared hosting using GitHub.
+
+IMPORTANT:
+
+The current GitHub repository is:
+
+https://github.com/cybernestxdigital/HAEROX
+
+Hostinger deploys the repository root directly to:
+
+public_html
+
+The current deployment gives a 403 Forbidden because the repository does not currently provide a directly deployable static website root.
+
+## REQUIRED RESULT
+
+Make the final GitHub repository directly deployable to Hostinger.
+
+The repository root MUST contain:
+
+index.html
+
+The website must work when Hostinger publishes the repository root to public_html.
+
+## WEBSITE REQUIREMENTS
+
+Keep the existing HAEROX website design, content, logo, images, animations and premium visual appearance.
+
+Do NOT redesign the website unnecessarily.
+
+Do NOT remove existing website functionality.
+
+The website must remain:
+
+* Premium
+* Responsive
+* Image-rich
+* Animated
+* Mobile friendly
+* Desktop friendly
+* Black and white HAEROX branding
+
+## HOSTING REQUIREMENTS
+
+The final production website must NOT require:
+
+* Node.js server
+* Express server
+* Backend server
+* Database
+* Authentication
+* Admin panel
+* Login
+* API server
+
+It must be deployable as a static website on standard Hostinger shared hosting.
+
+## IMPORTANT BUILD REQUIREMENT
+
+If the current project uses React/Vite or another frontend framework, configure it so that:
+
+npm run build
+
+creates a production-ready static output.
+
+Then configure the project so the final static output can be deployed to Hostinger.
+
+The simplest preferred structure is:
+
+/
+├── index.html
+├── services.html
+├── portfolio.html
+├── about.html
+├── contact.html
+├── assets/
+├── css/
+└── js/
+
+If the current framework requires a build process, make sure Hostinger's Git deployment produces the final website files inside public_html.
+
+Do NOT leave the website dependent on the Replit development server.
+
+## IMPORTANT
+
+The final deployed website must open at:
+
+https://haerox.com
+
+and the temporary Hostinger domain.
+
+Do not use Replit-specific URLs or development-server paths.
+
+All asset URLs must use production-safe relative paths.
+
+Examples:
+
+./assets/logo.png
+./assets/images/hero.jpg
+./css/style.css
+./js/script.js
+
+Avoid paths that only work inside Replit.
+
+## LOGO
+
+Keep using the existing HAEROX logo.
+
+Do not replace or redesign it.
+
+## PAGES
+
+Make sure these pages work:
+
+/
+/services.html
+/portfolio.html
+/about.html
+/contact.html
+
+The homepage MUST be available through:
+
+index.html
+
+## ROUTING
+
+Do not depend on server-side routing.
+
+Use real HTML pages or static routes that work directly on Hostinger.
+
+For example:
+
+index.html
+services.html
+portfolio.html
+about.html
+contact.html
+
+## FINAL CHECK
+
+Before finishing, verify:
+
+1. index.html exists in the deployable production root.
+2. CSS loads correctly.
+3. JavaScript loads correctly.
+4. Images load correctly.
+5. Logo loads correctly.
+6. Navigation works.
+7. Mobile menu works.
+8. Animations work.
+9. Portfolio works.
+10. Contact form UI works.
+11. No Replit-only paths remain.
+12. No localhost URLs remain.
+13. No development server is required.
+14. No admin panel is created.
+15. No database is required.
+
+After making the changes, run the production build and verify the generated output.
+
+Most importantly:
+
+THE FINAL RESULT MUST BE DIRECTLY DEPLOYABLE TO HOSTINGER PUBLIC_HTML AND MUST NOT RETURN 403 BECAUSE OF A MISSING INDEX FILE.
