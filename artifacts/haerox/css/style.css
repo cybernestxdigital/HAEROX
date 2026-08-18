@@ -1556,3 +1556,12 @@ select.form-control {
   .lightbox-prev { left: 0.5rem; } .lightbox-next { right: 0.5rem; }
   .lightbox-prev, .lightbox-next { width: 42px; height: 42px; }
 }
+
+/* ---- FAQ (contact page) ---- */
+.faq-list { max-width: 800px; }
+.faq-item { border-bottom: 1px solid rgba(10,10,10,0.15); padding: 1.5rem 0; }
+.faq-item summary { cursor: pointer; font-weight: 600; font-size: 1.1rem; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: '+'; font-size: 1.5rem; font-weight: 400; transition: transform 0.3s; }
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-item p { margin-top: 1rem; color: var(--text-secondary, #555); line-height: 1.7; max-width: 700px; }
