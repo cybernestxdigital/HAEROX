@@ -1565,3 +1565,13 @@ select.form-control {
 .faq-item summary::after { content: '+'; font-size: 1.5rem; font-weight: 400; transition: transform 0.3s; }
 .faq-item[open] summary::after { transform: rotate(45deg); }
 .faq-item p { margin-top: 1rem; color: var(--text-secondary, #555); line-height: 1.7; max-width: 700px; }
+
+/* ---- Testimonials ---- */
+.testimonials { padding: 8vw 0; }
+.testimonial-grid { margin-top: 3rem; gap: 2rem; }
+.testimonial-card { background: #fff; border: 1px solid rgba(10,10,10,0.08); padding: 2.5rem 2rem; display: flex; flex-direction: column; }
+.testimonial-stars { color: #0a0a0a; letter-spacing: 4px; font-size: 1rem; margin-bottom: 1.5rem; }
+.testimonial-text { line-height: 1.75; color: var(--text-secondary, #444); flex: 1; }
+.testimonial-author { margin-top: 2rem; display: flex; flex-direction: column; gap: 0.2rem; }
+.testimonial-author strong { font-size: 0.95rem; letter-spacing: 0.5px; }
+.testimonial-author span { font-size: 0.8rem; color: var(--text-secondary, #777); text-transform: uppercase; letter-spacing: 1px; }
